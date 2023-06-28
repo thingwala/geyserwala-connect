@@ -9,9 +9,9 @@ The official [Web Page](https://www.thingwala.com/geyserwala/connect/).
 * [Json REST](./docs/REST.md)
 
 # Bindings
-* [Python REST](https://github.com/thingwala/geyserwala-py/README.md)
+* [Python REST](https://github.com/thingwala/geyserwala-py/blob/main/README.md)
 
 # Integrations
-* [Home Assistant](https://github.com/thingwala/geyserwala-ha/README.md)
+* [Home Assistant](https://github.com/thingwala/geyserwala-ha/blob/main/README.md)
 
 
