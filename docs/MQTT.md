@@ -4,13 +4,17 @@ By default the topic template is `geyserwala/%prefix%/%mac%`. A full topic will 
 
 | Placeholder | Description |
 |---|---|
-| `%prefix` | Prefixes `cmnd` and `stat`. *Always* include a `%prefix` in your template |
+| `%prefix` | This is `cmnd` or `stat`. *Always* include `%prefix%` in your template |
 | `%mac%` | The device MAC address, without `:`'s |
 | `%ip%` | The device IP address. Note that depending on your network setup your IP might change from time to time. |
 | `%hostname%` | The device hostname. |
 
+## Client ID Template
+By default the topic template is `geyserwala-%mac%`. The `%mac%`, `%ip%` and `%hostname%` templates described above can be used.
+
 ## Status Topics
 Topics where `%prefix%` is `stat`. These are output topics which give information about the state of the device.
+
 | Value | Description |
 |---|---|
 | status | `<string>` |
