@@ -1,3 +1,8 @@
+Geyserwala Connect : REST API
+===
+
+***Integrating via REST***
+
 # Json REST API
 If the Admin web app is enabled a JSON REST API is available for you to monitor and control your device.
 
@@ -46,17 +51,4 @@ Command requests return a Json dict with a `success` field and a `message`.
 ## Values
 The names and values used in the `/api/value` API.
 
-| Value | RO/W | Description |
-|---|---|---|
-| status | RO | `<string>` |
-| mode | RW | `<string>` : `SETPOINT`\|`TIMER`\|`SOLAR`\|`HOLIDAY` |
-| setpoint | RW | `<int>` |
-| boost-demand | RW | `true`\|`false`  |
-| tank-temp | RW | `<int>` |
-| collector-temp |  RW | `<int>`|
-| element-demand | RW | `true`\|`false` |
-| pump-status | RO | `true`\|`false` |
-| external-demand | RW | `true`\|`false` |
-| external-setpoint | RW | `<int>` |
-| lowpower-enable | RW | `true`\|`false` |
-| timer | RW | `{"id": <int>, "begin": [<hour>, <min>], "end": [<hour>, <min>], "temp": <int>, "dow": [<bool>, ...]}` |
+See [ Operational Values ](./VALUES.md)

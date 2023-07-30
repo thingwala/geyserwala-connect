@@ -1,3 +1,9 @@
+Geyserwala Connect : MQTT
+===
+
+***Integrating via MQTT***
+
+
 # MQTT Integration
 ## Topic Template
 By default the topic template is `geyserwala/%prefix%/%mac%`. A full topic will take the form `<topic template>/<value>`. There are several placeholders that can be used to define your topic template:
@@ -15,7 +21,7 @@ By default the topic template is `geyserwala-%mac%`. The `%mac%`, `%ip%` and `%h
 ## Status Topics
 Topics where `%prefix%` is `stat`. These are output topics which give information about the state of the device.
 
-| Value | Description |
+| Name | Value |
 |---|---|
 | status | `<string>` |
 | mode | `SETPOINT`\|`TIMER`\|`SOLAR`\|`HOLIDAY` |
@@ -30,14 +36,17 @@ Topics where `%prefix%` is `stat`. These are output topics which give informatio
 | external-setpoint | `<int>` |
 | lowpower-enable | `ON`\|`OFF` |
 
+See [ Operational Values ](./VALUES.md) for more details.
 # Command Topics
 Topics where `%prefix%` is `stat`. These are input topics you can use to control the device.
 
-| Value | Description |
+| Name | Value |
 |---|---|
 | mode | `SETPOINT`\|`TIMER`\|`SOLAR`\|`HOLIDAY` |
-| setpoint | `<int>` (30 - 65) |
+| setpoint | `<int>` |
 | boost-demand | `ON`\|`OFF` |
 | external-demand | `ON`\|`OFF` |
-| external-setpoint | `<int>` (30 - 65) |
+| external-setpoint | `<int>` |
 | lowpower-enable | `ON`\|`OFF` |
+
+See [ Operational Values ](./VALUES.md) for more details.
