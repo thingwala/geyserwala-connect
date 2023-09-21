@@ -1,6 +1,6 @@
 Geyserwala Connect
 ===
-***Smart upgrade for the Geyserwise solar geyser***
+***Smart upgrade for Geyserwise systems***
 
 The official [Web Page](https://www.thingwala.com/geyserwala/connect/).
 
