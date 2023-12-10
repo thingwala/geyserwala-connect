@@ -4,10 +4,10 @@ Geyserwala Connect : REST API
 ***Integrating via REST***
 
 # Json REST API
-If the Admin web app is enabled a JSON REST API is available for you to monitor and control your device.
+If the Local app is enabled a JSON REST API is available for you to monitor and control your device.
 
 ## Authentication
-If you have set an admin password, all requests will require the session token header:
+If you have set an local password, all requests will require the session token header:
 
 * `Authorization: Bearer <token>`
 

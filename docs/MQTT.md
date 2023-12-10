@@ -34,19 +34,19 @@ Topics where `%prefix%` is `stat`. These are output topics which give informatio
 | pump-status |  `ON`\|`OFF` |
 | external-demand | `ON`\|`OFF` |
 | external-setpoint | `<int>` |
-| lowpower-enable | `ON`\|`OFF` |
+| external-disable | `<int>` seconds\|`0`\|`OFF`\|`ON` equivalent to 86400s|
 
 See [ Operational Values ](./VALUES.md) for more details.
 # Command Topics
-Topics where `%prefix%` is `stat`. These are input topics you can use to control the device.
+Topics where `%prefix%` is `cmnd`. These are input topics you can use to control the device.
 
 | Name | Value |
 |---|---|
 | mode | `SETPOINT`\|`TIMER`\|`SOLAR`\|`HOLIDAY` |
 | setpoint | `<int>` |
 | boost-demand | `ON`\|`OFF` |
-| external-demand | `ON`\|`OFF` |
+| external-demand | `<int>` seconds, `0` for off |
 | external-setpoint | `<int>` |
-| lowpower-enable | `ON`\|`OFF` |
+| external-disable | `<int>`  seconds, `0` for off |
 
 See [ Operational Values ](./VALUES.md) for more details.

@@ -32,8 +32,8 @@ Control of the Geyserwala Connect has been designed to expose many of its operat
 | Value | RO/W | Type | Description |
 |---|---|---|---|
 | external-setpoint | RW | `<int>` | The target temperature for external automation. |
-| external-demand | RW | `<bool>` | Enable heating to the external-setpoint. |
-| lowpower-enable | RW | `<bool>` | Prevent the heating element from being switched on. |
+| external-demand | RW | `<int>` seconds\|`0`\|`OFF`\|`ON` equivalent to 86400s | Enable heating to the external-setpoint.  |
+| external-disable | RW | `<int>` seconds\|`0`\|`OFF`\|`ON` equivalent to 86400s | Prevent the heating element from being switched on. |
 
 # Metrics
 ***JSON REST and MQTT***
